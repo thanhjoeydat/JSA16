@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: maroon;
+}
+body {
+  background-color: #ffc3a1;
+  height: 1000px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #a75d5d;
+}
+li {
+  display: inline-block;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+li a:hover {
+  background-color: #d3756b;
+}
+.textmom11 {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+.mommy {
+  height: 400px;
+  width: auto;
+  position: absolute;
+  left: 200px;
+  top: 175px;
+}
+.textmom1 {
+  width: 750px;
+  position: absolute;
+  left: 600px;
+  top: 175px;
+}
+.infomom {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.box1,
+.box2,
+.box3 {
+  width: 250px;
+  height: 100px;
+  border-style: solid;
+  border-radius: 7px;
+  padding: 5px 5px;
+  text-align: center;
+  font-size: 19px;
+  vertical-align: 10px;
+  border-width: 4px;
+  background-color: cornsilk;
+}
+.textmom21 {
+  position: absolute;
+  top: 650px;
+  left: 570px;
+}
+.mom2boxes {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 700px;
+}
+
+.btn {
+  width: 175px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: #a75d5d;
+  background-color: cornsilk;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn:hover {
+  border-style: dashed;
+}
