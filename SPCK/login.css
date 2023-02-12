@@ -54,6 +54,7 @@ button {
   border: none;
   cursor: pointer;
   width: 100%;
+  font-size: 18px;
 }
 
 button:hover {
@@ -72,11 +73,11 @@ button:hover {
 .register {
   float: right;
 }
-a {
+.resigter a {
   color: #a75d5d;
 }
 
-a:hover {
+.resigter a:hover {
   color: #d3756b;
 }
 

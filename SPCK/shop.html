@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="shop.css" />
+    <script
+      src="https://kit.fontawesome.com/d40367f1bc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <ul>
@@ -21,43 +25,104 @@
       </li>
     </ul>
     <h1 class="textshop">TOP 6 đồ dùng mẹ Dương thường mua!!!</h1>
+    <div class="cart-icon">
+      <p><i class="fa-solid fa-cart-shopping"></i><span>0</span><sup>đ</sup></p>
+    </div>
     <div class="totalitems">
       <div class="item">
-        <img class="imgitem" src="babyshoes.jpg" />
-        <p class="textitem1">Giày em bé</p>
-        <button id="myBtn1">Mua ngay</button>
+        <img class="imgitem" src="babyshoesbg.png" />
+        <h4>Giày em bé</h4>
+        <p class="priceitem">
+          <i><b>200.000</b></i>
+        </p>
+        <button>Mua ngay</button>
       </div>
       <div class="item">
-        <img class="imgitem" src="bobba.png" />
-        <p class="textitem2">Trà sữa</p>
-        <button id="myBtn2">Mua ngay</button>
+        <img class="imgitem" src="bobabg.png" />
+        <h4><b>Trà sữa</b></h4>
+        <p class="priceitem">
+          <i><b>50.000</b></i>
+        </p>
+        <button>Mua ngay</button>
       </div>
       <div class="item">
-        <img class="imgitem" src="chethapcam.jfif" />
-        <p class="textitem3">Chè thập cẩm</p>
-        <button id="myBtn3">Mua ngay</button>
+        <img class="imgitem" src="chethapcambg.png" />
+        <h4><b>Chè thập cẩm</b></h4>
+        <p class="priceitem">
+          <i><b>30.000</b></i>
+        </p>
+        <button>Mua ngay</button>
       </div>
       <div class="item">
-        <img class="imgitem" src="necklace.png" />
-        <p class="textitem4">Đồ trang sức</p>
-        <button id="myBtn4">Mua ngay</button>
+        <img class="imgitem" src="necklacebg.png" />
+        <h4><b>Đồ trang sức</b></h4>
+        <p class="priceitem">
+          <i><b>800.000</b></i>
+        </p>
+        <button>Mua ngay</button>
       </div>
       <div class="item">
-        <img class="imgitem" src="bim.jpg" />
-        <p class="textitem5">Bỉm em bé</p>
-        <button id="myBtn5">Mua ngay</button>
+        <img class="imgitem" src="bim.png" />
+        <h4><b>Bỉm em bé</b></h4>
+        <p class="priceitem">
+          <i><b>150.000</b></i>
+        </p>
+        <button>Mua ngay</button>
       </div>
       <div class="item">
         <img class="imgitem" src="skincare.png" />
-        <p class="textitem6">Skincare (cetaphil)</p>
-        <button id="myBtn6">Mua ngay</button>
+        <h4><b>Skincare</b></h4>
+        <p class="priceitem">
+          <i><b>80.000</b></i>
+        </p>
+        <button>Mua ngay</button>
       </div>
     </div>
     <div class="cart">
-      <h1 class="textcart">Cart</h1>
-      <p id="demo"></p>
+      <i class="fa-solid fa-x"></i>
+      <h2 class="titleCart">Giỏ hàng</h2>
+      <form>
+        <table>
+          <thead>
+            <tr>
+              <th>Sản phẩm</th>
+              <th>Giá</th>
+              <th>SL</th>
+              <th>Chọn</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr>
+              <td style="display: flex; align-items: center" class="tdbim">
+                <img class="picbim" src="bim.png" />bỉm
+              </td>
+              <td>
+                <i
+                  ><span><b>150.000</b></span
+                  ><b><sup>đ</sup></b></i
+                >
+              </td>
+              <td>
+                <input
+                  style="width: 50px; outline: none"
+                  class="inputbim"
+                  type="number"
+                  value="1"
+                  min="1"
+                />
+              </td>
+              <td style="cursor: pointer" class="deletebim">Xóa</td>
+            </tr> -->
+          </tbody>
+        </table>
+        <div class="totalcart">
+          <p>
+            <b>Tổng tiền: <span>0</span><sup>đ</sup></b>
+          </p>
+        </div>
+        <button>Chốt đơn!</button>
+      </form>
     </div>
-
     <script src="shop.js"></script>
   </body>
 </html>

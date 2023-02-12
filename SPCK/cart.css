@@ -5,6 +5,7 @@
 }
 body {
   background-color: #ffc3a1;
+  height: 1000px;
 }
 ul {
   list-style-type: none;
@@ -28,4 +29,47 @@ li a {
 
 li a:hover {
   background-color: #d3756b;
+}
+
+.picbim {
+  width: 150px;
+  height: auto;
+}
+.tdbim {
+  display: flex;
+  align-items: center;
+}
+.inputbim {
+  width: 50px;
+  outline: none;
+}
+.deletebim {
+  cursor: pointer;
+}
+.cart {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.titleCart {
+  font-size: 35px;
+  padding-bottom: 50px;
+}
+.cart table {
+  width: 100%;
+}
+.cart table tr td {
+  border-bottom: 3px solid #ffff;
+  padding: 12px 0;
+}
+.totalcart {
+  text-align: right;
+}
+
+.cart table thead tr th:last-child {
+  text-align: right;
+}
+.cart table tbody tr td:last-child {
+  text-align: right;
 }
