@@ -27,22 +27,27 @@
         <a href="login.html">ĐĂNG NHẬP</a>
       </li>
       <li style="float: right">
-        <a href="cart.html">GIỎ HÀNG</a>
+        <a href="register.html">ĐĂNG KÍ</a>
       </li>
     </ul>
     <div class="register">
       <h1 class="textlogin">Đăng kí</h1>
       <div class="container">
         <label><b>Tên đăng kí:</b></label>
-        <input type="text" placeholder="Nhập tên đăng kí" required />
+        <input
+          type="text"
+          placeholder="Nhập tên đăng kí"
+          id="username"
+          required
+        />
 
         <label><b>Ngày sinh:</b></label>
-        <input type="date" required />
+        <input type="date" id="birth" required />
         <label><b>Email:</b></label>
-        <input type="email" placeholder="Nhập email" required />
+        <input type="email" placeholder="Nhập email" id="email" required />
 
         <label><b>Mật khẩu:</b></label>
-        <input type="text" placeholder="Nhập mật khẩu" required />
+        <input type="text" placeholder="Nhập mật khẩu" id="password" required />
         <button type="submit">Đăng kí</button>
       </div>
       <p class="login">

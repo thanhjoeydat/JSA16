@@ -6,7 +6,6 @@
 }
 body {
   background-color: #ffc3a1;
-  height: 2000px;
 }
 ul {
   list-style-type: none;
@@ -34,9 +33,10 @@ li a:hover {
 
 .textshop {
   padding-top: 70px;
-  padding-left: 350px;
+  /* padding-left: 350px; */
   padding-bottom: 50px;
   font-size: 45px;
+  text-align: center;
 }
 
 .imgitem {
@@ -82,7 +82,7 @@ button:hover {
 }
 
 .picbim {
-  width: 150px;
+  width: 100px;
   height: auto;
 }
 .tdbim {
@@ -97,19 +97,24 @@ button:hover {
   cursor: pointer;
 }
 .cart {
-  position: absolute;
-  right: 0px;
-  top: 0;
-  height: 1000px;
+  position: fixed;
+  right: 20px;
+  bottom: 0;
+  height: 510px;
   width: 30%;
-  background-color: cadetblue;
-  overflow-y: scroll;
+  background-color: blanchedalmond;
+  overflow-y: auto;
   margin: auto;
   text-align: center;
-  padding-top: 50px;
-  padding-left: 10px;
+  padding-top: 30px;
+  padding-left: 5px;
   padding-right: 10px;
-  /* right: -100%; */
+  bottom: -100%;
+  transition: all 0.7s ease;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #a75d5d;
+  border-width: 4px;
 }
 .cart button {
   width: 175px;
@@ -124,16 +129,23 @@ button:hover {
 .cart button:hover {
   border-style: dashed;
 }
+.cart input {
+  border: none;
+  border-radius: 5px;
+}
 .titleCart {
   font-size: 35px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.title {
+  padding-left: 15px;
 }
 .cart table {
   width: 100%;
 }
 .cart table tr td {
-  border-bottom: 3px solid #ffff;
-  padding: 12px 0;
+  padding: 15px 0;
 }
 .totalcart {
   text-align: right;
@@ -145,16 +157,47 @@ button:hover {
 .cart table tbody tr td:last-child {
   text-align: right;
 }
-.gg-shopping-cart {
-  display: inline;
-}
-
-.cart-icon i,
-p {
+.cart-icon {
+  border: 2px solid;
+  display: inline-block;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  padding-top: 7px;
+  width: 175px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
   cursor: pointer;
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: black;
+  background-color: cornsilk;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.cart-icon i {
+  padding-right: 10px;
 }
 
 .cart i {
   cursor: pointer;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+}
+.cart button {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: none;
+  background-color: #d3756b;
+  color: #fff;
+  cursor: pointer;
+}
+.cart button:hover {
+  border-style: none;
+}
+.totalcart p {
+  padding-top: 10px;
+  font-size: 25px;
+}
+.priceitem {
+  color: crimson;
+  font-size: smaller;
 }

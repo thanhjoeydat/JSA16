@@ -24,9 +24,9 @@ function Addcart(productprice, productimg, productname) {
     productimg +
     '" /><p class ="title">' +
     productname +
-    "</p></td><td><i><span><b>" +
+    "</p></td><td><i><span>" +
     productprice +
-    '</b></span><b><sup>đ</sup></b></i></td><td><input style="width: 50px; outline: none"class="inputbim"type="number"value="1"min="1"/></td><td style="cursor: pointer" class="deletebim">Xóa</td></tr>';
+    '</span><sup>đ</sup></i></td><td><input style="width: 30px; outline: none"class="inputbim"type="number"value="1"min="1"/></td><td style="cursor: pointer" class="deletebim">Xóa</td></tr>';
   addtr.innerHTML = trcontent;
   let cartTable = document.querySelector("tbody");
   cartTable.append(addtr);
@@ -41,7 +41,6 @@ function cartTotal() {
     let productprice = cartItem[i].querySelector("span").innerText;
     let total1A = inputvalue * productprice * 1000;
     total1C = total1C + total1A;
-    // total1D = total1C.toLocaleString("de-DE");
   }
   let cartTotalA = document.querySelector(".totalcart span");
   let cartPrice = document.querySelector(".cart-icon span");
@@ -72,5 +71,14 @@ function inputchange() {
   }
 }
 
-let cartbtn = document.querySelector(".fa-solid fa-x");
-let cartshow = document.querySelector(".fa-solid fa-cart-shopping");
+let cartbtn = document.querySelector(".fa-x");
+let cartshow = document.querySelector(".cart-icon");
+cartshow.addEventListener("click", function () {
+  document.querySelector(".cart").style.bottom = "0";
+});
+
+cartbtn.addEventListener("click", function () {
+  document.querySelector(".cart").style.bottom = "-100%";
+});
+
+//
