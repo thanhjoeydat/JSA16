@@ -30,7 +30,9 @@ li a:hover {
 body {
   background-image: url(bghome.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 700px;
 }
 form {
   border: 3px solid #f1f1f1;
@@ -85,3 +87,19 @@ button:hover {
 button {
   background-color: #a75d5d;
 }
+
+@media screen and (max-width: 840px) {
+  li a {
+    transition: all 0.7s ease;
+  }
+}
+@media (max-width: 501px) {
+  li a {
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 15px;
+    transition: all 0.7s ease;
+  }
+}
+
+/* fsdfsd */

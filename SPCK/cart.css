@@ -59,10 +59,6 @@ li a:hover {
 .cart table {
   width: 100%;
 }
-/* .cart table tr td {
-  border-bottom: 3px solid #ffff;
-  padding: 12px 0;
-} */
 .totalcart {
   text-align: right;
 }

@@ -31,6 +31,17 @@ li a {
 li a:hover {
   background-color: #d3756b;
 }
+
+.mom1 {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+}
+
 .textmom11 {
   text-align: center;
   padding-bottom: 30px;
@@ -39,44 +50,42 @@ li a:hover {
 .mommy {
   height: 400px;
   width: auto;
-  position: absolute;
   left: 200px;
   top: 175px;
 }
 .textmom1 {
   width: 750px;
-  position: absolute;
   left: 600px;
   top: 175px;
 }
 .infomom {
   font-size: 25px;
   padding-bottom: 10px;
+  text-align: justify;
 }
 
 .box1,
 .box2,
-.box3 {
+.box3,
+.box4 {
   width: 250px;
   height: 100px;
   border-style: solid;
   border-radius: 7px;
+  border-width: 4px;
   padding: 10px 10px;
   text-align: center;
   font-size: 19px;
-  vertical-align: 10px;
-  border-width: 4px;
   background-color: cornsilk;
-}
-.textmom21 {
-  position: absolute;
-  top: 650px;
-  left: 570px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 .mom2boxes {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-top: 700px;
 }
 
 .btn {
@@ -92,4 +101,48 @@ li a:hover {
 
 .btn:hover {
   border-style: dashed;
+}
+
+.mom2 {
+  margin-top: 100px;
+}
+
+.textmom21 {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+@media screen and (max-width: 840px) {
+  .mom1 {
+    flex-direction: column;
+    transition: all 0.7s ease;
+  }
+
+  .mommy {
+    width: 300px;
+    position: relative;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    transition: all 0.7s ease;
+  }
+
+  .textmom1 {
+    width: 100%;
+    transition: all 0.7s ease;
+  }
+  li a {
+    transition: all 0.7s ease;
+  }
+}
+@media screen and (max-width: 501px) {
+  li a {
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 15px;
+    transition: all 0.7s ease;
+  }
+  .infomom {
+    font-size: 20px;
+  }
 }
